@@ -450,7 +450,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>aspectj-maven-plugin</artifactId>
-				<version>1.8</version>
+				<version>1.7</version>
 				<dependencies>
 					<!-- Note: Maven 2.0.9 or > required or these are ignored (MNG-2972) -->
 					<dependency>
