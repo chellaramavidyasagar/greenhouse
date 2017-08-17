@@ -13,20 +13,7 @@
   		<h2>Email Invites</h2>
   		<!-- TODO clean this up -->
   		<s:bind path="*">
-		<c:if test="${status.error}">
-		<div class="error">
-			Unable to send invite.
-			<s:bind path="invitees">
-		  	<c:if test="${status.error && status.errorCode == 'typeMismatch'}">
-		  	Please ensure your invitees have been entered using the correct format and resubmit.
-		  	<c:set var="errorDisplayed" value="true" />
-		  	</c:if>
- 			</s:bind>
- 			<c:if test="${!errorDisplayed}">
-		  	All fields are required.
- 			</c:if>
- 		</div>
-	  	</c:if>
+		
   		</s:bind>  		
   		<p>Send a personal Greenhouse invitation to your friends and colleagues.</p>  		
 	</div>
