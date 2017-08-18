@@ -10,7 +10,7 @@
 		We help you connect with fellow developers and take advantage of everything the Spring community has to offer.	
 	</p>
 	
-	<form id="signin" action="<c:url value="/signin/authenticate" />" method="post">
+	<!-- >form id="signin" action="<c:url value="/signin/authenticate" />" method="post">
 	<div class="formInfo">
   		<h2>Greenhouse Sign In</h2>
   		<c:if test="${not empty param['error']}">
@@ -28,6 +28,6 @@
 	</fieldset>
 	<p><button type="submit">Sign In</button></p>
 	<p><a href="<c:url value="/reset" />">Forgot your password?</a></p>
-</form>
+</form -->
 	
 </div>
