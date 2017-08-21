@@ -5,7 +5,8 @@
 	<fieldset>
 		<form:label path="firstName">First Name <form:errors path="firstName" cssClass="error" /></form:label>
 		<form:input path="firstName" />
-		
+		<form:label path="lastName">Last Name <form:errors path="lastName" cssClass="error" /></form:label>
+		<form:input path="lastName" />
 		<form:label path="email">Email (never shared, used for correspondence) <form:errors path="email" cssClass="error" /></form:label>
 		<form:input path="email" />	
 		<form:label path="confirmEmail">Confirm Email <form:errors path="confirmEmail" cssClass="error" /></form:label>
@@ -17,9 +18,9 @@
 			<form:option value="MALE" label="Male" />
 			<form:option value="FEMALE" label="Female" />
 		</form:select>
-		<!-- TODO only one error message that considers all 3 fields -->
-			
-		<!--  div class="multiple">
+		<!-- TODO only one error message that considers all 3 fields -->	
+		<form:label path="month">Birthday (never shared, used to display age) <form:errors path="month" cssClass="error" /></form:label>		
+		<div class="multiple">
 			<form:select path="month">
 				<form:option value="">Month</form:option>
 				<form:option value="1">January</form:option>
@@ -143,5 +144,5 @@
 				<form:option value="1941" />
 				<form:option value="1940" />
 			</form:select>
-		</div -->		
+		</div>		
 	</fieldset>
